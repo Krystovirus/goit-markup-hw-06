@@ -58,19 +58,19 @@
                     <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
                     <form action="#" class="modal-form" name="main-form" data-netlify="true" id="form">
                         <label for="user-name" class="field-name">Имя
-                            <input type="text" class="field-input" id="user-name" name="user-name">
+                            <input type="text" class="field-input" id="user-name" name="user-name" required/>
                             <svg class="modal-icon" aria-hidden="true">
                                 <use href="./images/icons.svg#icon-person-form">
                             </svg>
                         </label>
                         <label for="user-phone" class="field-name">Телефон
-                            <input type="tel" class="field-input" id="user-phone" name="user-phone">
+                            <input type="tel" class="field-input" id="user-phone" name="user-phone" required/>
                             <svg class="modal-icon" aria-hidden="true">
                                 <use href="./images/icons.svg#icon-phone-form">
                             </svg>
                         </label>
                         <label for="user-email" class="field-name">Почта
-                            <input type="email" class="field-input" id="user-email" name="user-email">
+                            <input type="email" class="field-input" id="user-email" name="user-email" required/>
                             <svg class="modal-icon" aria-hidden="true">
                                 <use href="./images/icons.svg#icon-email-form">
                             </svg>
@@ -79,16 +79,23 @@
                                 Комментарий
                             <textarea class="feedback-style" name="feedback" rows="6" placeholder="Введите текст" id="user-comment"></textarea>
                         </label>
-                        <div class="modal-checkbox">
-                            <a class="decoration" href="#"><svg class="modal-checkbox-icon" aria-hidden="true">
-                                <use href="./images/icons.svg#icon-checkbox">
-                            </svg></a>
-                            <input class="checkbox-box" type="checkbox" name="agreement" value="agreed" checked /><p class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="terms" href="#">Условия договора</a></p>
-                        </div>
+
+                        <label class="modal-checkbox" for="agreement">
+                            <input class="checkbox visually-hidden" type="checkbox" name="agreement" value="agreed" required/>
+                            Соглашаюсь с рассылкой и принимаю <a class="terms" href="#">Условия договора</a>
+                            <svg class="icon-active" width="16" height="15">
+                                <use href="images/icons.svg#icon-checkbox"></use>
+                            </svg> 
+                            <svg class="icon-check" width="16" height="15">
+                                <use href="images/icons.svg#icon-vector" ></use>
+                            </svg>			          
+                        </label>
+
                         <button type="submit" class="send-button" id="send-btn">Отправить</button>
                     </form>
                 </div>
             </div>
+
         </section>
         
         <section class="advantages-section">
