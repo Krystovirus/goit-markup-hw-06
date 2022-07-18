@@ -693,6 +693,7 @@ li {list-style-type : none;}
 
 .modal-checkbox { position: relative;  
     align-items: center;
+    padding-left: 24px;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;      
@@ -702,8 +703,8 @@ li {list-style-type : none;}
     margin-bottom: var(--uncommon-margin);}
 
 .icon-check { position: absolute;
-    left: -2px;
-    top: 10px;
+    left: 0;
+    top: 11px;
     transform: translateY(-50%);
     width: 16px;
     height: 15px;
@@ -713,8 +714,8 @@ li {list-style-type : none;}
 .checkbox:checked ~.icon-check { opacity: 0; }
 
 .icon-active { position: absolute;
-    left: -2px;
-    top: 10px;
+    left: 0;
+    top: 11px;
     transform: translateY(-50%);
     width: 16px;
     height: 15px;
